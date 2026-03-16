@@ -11,7 +11,7 @@ class Prtr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.3/prtr_0.6.3_darwin_amd64.tar.gz"
-      sha256 "805620ebcfc9840d4b8a524d76be6cae795727e7713cd70ef6be3da34e400167"
+      sha256 "116fad6476c16639519759843319135969a5e9b8be038d13d4ba4f5ce9360c70"
 
       define_method(:install) do
         bin.install "prtr"
@@ -19,7 +19,7 @@ class Prtr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.3/prtr_0.6.3_darwin_arm64.tar.gz"
-      sha256 "02432da3e3939035109e4c9130d39870f5937aedc88ef17e600b41ae95442cbe"
+      sha256 "169080bb23a64e85a3c615ec073cd8304e2c83f873372860b8f962d0de5a0580"
 
       define_method(:install) do
         bin.install "prtr"
@@ -30,14 +30,14 @@ class Prtr < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.3/prtr_0.6.3_linux_amd64.tar.gz"
-      sha256 "6b74b16ecf99be4a7567747a8e19a3911a35be9d003764c3a0d3305770cbce52"
+      sha256 "ee29938e0f489a38726361a3455d6c3c82e5af6c94ef4da435bc36594247f3ff"
       define_method(:install) do
         bin.install "prtr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.3/prtr_0.6.3_linux_arm64.tar.gz"
-      sha256 "c5cf28fe6a8b3dca4f8ad7c446f4ff8a4943351ae12a6cbb3a9378049634b6af"
+      sha256 "4b9ae1aac3cd8f7f1b177e79ef6c487eef94d0cc4ecd31e4c36b4904d78b1b95"
       define_method(:install) do
         bin.install "prtr"
       end
