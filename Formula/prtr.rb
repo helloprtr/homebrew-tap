@@ -5,21 +5,21 @@
 class Prtr < Formula
   desc "Think in your language and send the right prompt to the right AI app."
   homepage "https://github.com/helloprtr/poly-prompt"
-  version "0.6.1"
+  version "0.6.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.1/prtr_0.6.1_darwin_amd64.tar.gz"
-      sha256 "1c9534c1f3b0d3af3952465706ca575586aef12a1a8c741a9667333683dd27d3"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.2/prtr_0.6.2_darwin_amd64.tar.gz"
+      sha256 "ee1199afc78bfaed5f61507ab5c7ff8dae243096435c5d3d673c1590ee1a16fe"
 
       def install
         bin.install "prtr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.1/prtr_0.6.1_darwin_arm64.tar.gz"
-      sha256 "3dca5c346ad3a5e15e044188aea6d017c7d1bf2530181ac8f645bf82920dedda"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.2/prtr_0.6.2_darwin_arm64.tar.gz"
+      sha256 "2372cc380316c7a1bf0dfb09919762640cbfd3b870558e0df6c13d0dafc40a56"
 
       def install
         bin.install "prtr"
@@ -29,15 +29,15 @@ class Prtr < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.1/prtr_0.6.1_linux_amd64.tar.gz"
-      sha256 "9100595cd75c4a202065412fbef83355cfa450d5973140d67e62679617d227e7"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.2/prtr_0.6.2_linux_amd64.tar.gz"
+      sha256 "7e7456e15efa249f8b27ebb8e0776a5b80d22deac499fe346a546bc1331504c8"
       def install
         bin.install "prtr"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.1/prtr_0.6.1_linux_arm64.tar.gz"
-      sha256 "da4f6108f34bd72a502fc025b68b020d0b631b8fec65c8bf8fcd8dc00cc538ee"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v0.6.2/prtr_0.6.2_linux_arm64.tar.gz"
+      sha256 "d66026cd52e473633e1badee74c5e6848a8c45c41fd3c3ed1884c400b04ed11a"
       def install
         bin.install "prtr"
       end
