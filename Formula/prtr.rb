@@ -5,21 +5,21 @@
 class Prtr < Formula
   desc "Think in your language and send the right prompt to the right AI app."
   homepage "https://github.com/helloprtr/poly-prompt"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.0/prtr_1.0.0_darwin_amd64.tar.gz"
-      sha256 "72b1e65ef1e9220297ba1c185d0062fb959f11200ada18dcfa812d05763f9453"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.1/prtr_1.0.1_darwin_amd64.tar.gz"
+      sha256 "02cad9151f1f8aa4fac11194503cb06314200f457d93aed74bb90679a16ac6e9"
 
       define_method(:install) do
         bin.install "prtr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.0/prtr_1.0.0_darwin_arm64.tar.gz"
-      sha256 "807a92d60dfbab52443a3e68d3f6edecf509305aeb12ce01357a2c3030715e7b"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.1/prtr_1.0.1_darwin_arm64.tar.gz"
+      sha256 "6f50863fd52818672df6de35bc5d16142d9cf9c29b6e3bb9187d99dfca9ff46f"
 
       define_method(:install) do
         bin.install "prtr"
@@ -29,15 +29,15 @@ class Prtr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.0/prtr_1.0.0_linux_amd64.tar.gz"
-      sha256 "c35c0f9ced7f76a87cfa4f0ba2f6deca338546827e197d3110cd9086590ac941"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.1/prtr_1.0.1_linux_amd64.tar.gz"
+      sha256 "0e59c0bc0009ac397d6b32ae02ed58d9117bc93d122c6c8bd42deb8820057ce2"
       define_method(:install) do
         bin.install "prtr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.0/prtr_1.0.0_linux_arm64.tar.gz"
-      sha256 "062d131376b161dc84c40b815ec83be2145e595dfc366a9e717f1fa2486fb5f2"
+      url "https://github.com/helloprtr/poly-prompt/releases/download/v1.0.1/prtr_1.0.1_linux_arm64.tar.gz"
+      sha256 "904f3a32b6f93f0d3bac9ab9a8279069879750911b7a51df611546a2be1ef7db"
       define_method(:install) do
         bin.install "prtr"
       end
